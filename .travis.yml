@@ -3,7 +3,7 @@ services:
   - docker
 
 before-install:
-  - docker build -t salat_god/react -f Dockerfile.dev .
+  - docker build -t TESTREACTAPP -f Dockerfile.dev .
 
 script:
-  - docker run salat_god/react npm run test -- --coverage
+  - docker run TESTREACTAPP npm run test -- --coverage
